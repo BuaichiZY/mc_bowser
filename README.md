@@ -7,6 +7,7 @@
 ![License](https://img.shields.io/badge/License-BSD%20|%20CC%20BY--NC--SA%204.0-blue)
 >
 > 本项目由人工智能辅助开发，如发现bug请及时反馈
+> 适用于mc java 26.1.2版本，Neoforge版本至少应为26.1.2.86及以上
 
 ## 构建
 
