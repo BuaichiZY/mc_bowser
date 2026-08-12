@@ -21,6 +21,9 @@
 
 - You can also search for the recipe using JEI.
 
+- <img width="1404" height="811" alt="image" src="https://github.com/user-attachments/assets/5de44a13-9199-434e-b7ac-583dd9fa40f1" />
+
+
 ## Usage
 
 - Place the blocks vertically in a size ranging from **2×2 to 16×9**. All blocks must face the same direction.
@@ -36,6 +39,10 @@ from the game directory.
 - `cache-directory` specifies the directory used to store converted media files.
 - The system caches the three most recently used compatible videos. When a fourth video is opened, the oldest cached file will be removed automatically.
 - On servers, the server synchronizes the display state, current URL/media content, and playback start time. Each client renders and plays the content locally. Only one player can hold full controller access for a display at the same time.
+
+- <img width="1404" height="811" alt="image" src="https://github.com/user-attachments/assets/7e1d374c-a852-47e8-8c4d-8cc6133e9b95" />
+- <img width="1404" height="815" alt="image" src="https://github.com/user-attachments/assets/0968593e-a409-48ed-a4d0-d00b3489a883" />
+
 
 ## HTML5 Video Notes
 
