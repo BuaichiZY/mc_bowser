@@ -1,6 +1,6 @@
 # mc_bowser mc浏览器
 
-> 
+> [🇨🇳 简体中文](README.md) | [🇺🇸 English](README_EN.md)
 >
 >![Minecraft](https://img.shields.io/badge/Minecraft-Java%20Edition-brightgreen)
 ![Forge](https://img.shields.io/badge/%20NeoForge%20-26.1.2.86%20|%2026.1.2-orange)
