@@ -7,6 +7,7 @@
 ![License](https://img.shields.io/badge/License-BSD%20|%20CC%20BY--NC--SA%204.0-blue)
 
 > This project was developed with the assistance of AI. If you encounter any bugs, please report them.
+> This mod is compatible with Minecraft Java Edition 26.1.2 and requires NeoForge version 26.1.2.86 or above.
 
 ## Builds
 
