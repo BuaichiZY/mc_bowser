@@ -16,9 +16,9 @@
 
 ## Survival Recipe
 
-Crafted with one black wool in the center and iron ingots surrounding it in a crafting table.
+- Crafted with one black wool in the center and iron ingots surrounding it in a crafting table.
 
-You can also search for the recipe using JEI.
+- You can also search for the recipe using JEI.
 
 ## Usage
 
@@ -38,6 +38,6 @@ from the game directory.
 
 ## HTML5 Video Notes
 
-MC Bowser uses the codecs included with the installed **Rinku JCEF runtime**.
+- MC Bowser uses the codecs included with the installed **Rinku JCEF runtime**.
 
-For video streams that cannot be played directly, such as H.264/AAC streams, the compatibility playback feature locally converts public videos into **WebM/VP9/Opus** format.
+- For video streams that cannot be played directly, such as H.264/AAC streams, the compatibility playback feature locally converts public videos into **WebM/VP9/Opus** format.
