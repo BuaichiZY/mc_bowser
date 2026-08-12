@@ -1,0 +1,20 @@
+{
+  "block.mc_bowser.display_panel": "浏览器显示屏面板",
+  "itemGroup.mc_bowser": "MC Bowser",
+  "message.mc_bowser.invalid_structure": "请搭建完整矩形显示屏，尺寸须在 2x2 到 16x9 之间。",
+  "message.mc_bowser.browser_initializing": "Chromium 浏览器仍在初始化，请等待 Rinku 完成下载后重试。",
+  "message.mc_bowser.browser_unavailable": "Chromium 浏览器初始化失败，请检查 Rinku 下载和网络状态，然后重启游戏。",
+  "message.mc_bowser.browser_open_failed": "无法打开浏览器，详情请查看游戏日志。",
+  "message.mc_bowser.controls_hint": "浏览器正在启动。右键屏幕正面可操作网页；Shift+右键打开地址栏与完整控制。",
+  "message.mc_bowser.compat_bilibili_only": "兼容播放仅支持公开的哔哩哔哩视频页面。",
+  "message.mc_bowser.compat_busy": "这块显示屏正在准备另一个视频。",
+  "message.mc_bowser.compat_started": "正在准备 CEF 兼容视频，下载和转换可能需要几分钟……",
+  "message.mc_bowser.compat_ready": "兼容视频准备完成，已在显示屏上开始播放。",
+  "message.mc_bowser.compat_failed": "兼容播放失败：%s",
+  "message.mc_bowser.control_busy": "该显示屏正由 %s 操作。",
+  "screen.mc_bowser.browser": "浏览器显示屏",
+  "screen.mc_bowser.compat_play": "兼容播放",
+  "screen.mc_bowser.address": "网页地址",
+  "screen.mc_bowser.go": "访问",
+  "screen.mc_bowser.size": "显示屏尺寸：%sx%s 方块"
+}

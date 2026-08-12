@@ -1,0 +1,20 @@
+{
+  "block.mc_bowser.display_panel": "Browser Display Panel",
+  "itemGroup.mc_bowser": "MC Bowser",
+  "message.mc_bowser.invalid_structure": "Build a complete rectangular display between 2x2 and 16x9 panels.",
+  "message.mc_bowser.browser_initializing": "The Chromium browser is still initializing. Wait for Rinku to finish downloading, then try again.",
+  "message.mc_bowser.browser_unavailable": "The Chromium browser failed to initialize. Check the Rinku download/network status and restart the game.",
+  "message.mc_bowser.browser_open_failed": "The browser could not be opened. See the game log for details.",
+  "message.mc_bowser.controls_hint": "The browser is starting. Right-click the front to interact; Shift+right-click opens controls.",
+  "message.mc_bowser.compat_bilibili_only": "Compatibility playback supports a public Bilibili video page.",
+  "message.mc_bowser.compat_busy": "This display is already preparing a video.",
+  "message.mc_bowser.compat_started": "Preparing a CEF-compatible copy. Downloading and converting may take several minutes...",
+  "message.mc_bowser.compat_ready": "Compatible video is ready and is now playing on the display.",
+  "message.mc_bowser.compat_failed": "Compatibility playback failed: %s",
+  "message.mc_bowser.control_busy": "This display is currently controlled by %s.",
+  "screen.mc_bowser.browser": "Browser Display",
+  "screen.mc_bowser.compat_play": "Compat play",
+  "screen.mc_bowser.address": "Web address",
+  "screen.mc_bowser.go": "Go",
+  "screen.mc_bowser.size": "Display size: %sx%s blocks"
+}

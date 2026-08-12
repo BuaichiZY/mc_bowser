@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "III",
+    "IWI",
+    "III"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "W": "minecraft:black_wool"
+  },
+  "result": {
+    "count": 1,
+    "id": "mc_bowser:display_panel"
+  }
+}
