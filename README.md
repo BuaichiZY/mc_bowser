@@ -29,3 +29,15 @@ You can also search for the recipe using JEI.
 - Links that request a new browser tab will be automatically redirected to the current display, fixing loading issues on websites such as Bilibili when opening video pages.
 - On public Bilibili video pages, press **Compat Play** in the controller to download and transcode videos into WebM format for playback with the default CEF. This feature only supports non-DRM content that the player is allowed to access.
 - The media bridge reads:
+from the game directory.
+
+- `tools-directory` specifies the folder containing `yt-dlp.exe` and FFmpeg.
+- `cache-directory` specifies the directory used to store converted media files.
+- The system caches the three most recently used compatible videos. When a fourth video is opened, the oldest cached file will be removed automatically.
+- On servers, the server synchronizes the display state, current URL/media content, and playback start time. Each client renders and plays the content locally. Only one player can hold full controller access for a display at the same time.
+
+## HTML5 Video Notes
+
+MC Bowser uses the codecs included with the installed **Rinku JCEF runtime**.
+
+For video streams that cannot be played directly, such as H.264/AAC streams, the compatibility playback feature locally converts public videos into **WebM/VP9/Opus** format.
