@@ -36,6 +36,6 @@
 - <img width="1404" height="813" alt="image" src="https://github.com/user-attachments/assets/644a627b-a6aa-4843-a18a-bf03ba0449ef" />
 - <img width="1404" height="811" alt="image" src="https://github.com/user-attachments/assets/09852e50-0331-43bc-9e52-aa28d2717e9e" />
 
--
+
 - HTML5 视频说明
 - MC Bowser 使用已安装的 Rinku JCEF 运行时所自带的编解码器。在处理 H.264/AAC 等无法直接播放的视频流时，兼容播放功能会在本地将公开视频转换为 WebM/VP9/Opus 格式。
