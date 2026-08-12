@@ -51,8 +51,18 @@ public final class DisplayPanelRenderer implements BlockEntityRenderer<DisplayPa
                        SubmitNodeCollector collector, CameraRenderState camera) {
         RinkuBrowser browser = state.browser;
         if (browser == null) return;
-        collector.submitCustomGeometry(poseStack, RenderTypes.entitySolid(browser.getTextureIdentifier()),
+        // The browser is one large quad submitted by the panel's origin block entity. Use a
+        // no-cull pipeline so shallow viewing angles (and the rear side) cannot discard it.
+        collector.submitCustomGeometry(poseStack, RenderTypes.entityCutout(browser.getTextureIdentifier()),
                 (pose, buffer) -> drawScreen(pose, buffer, state.facing, state.width, state.height));
+    }
+
+    @Override
+    public boolean shouldRenderOffScreen() {
+        // Vanilla otherwise performs the first visibility decision as if this renderer belonged
+        // only to the origin block. The geometry spans the complete multi-block display.
+        // shouldRender(...) still enforces the normal 64-block render distance.
+        return true;
     }
 
     private static void drawScreen(PoseStack.Pose pose, VertexConsumer buffer, Direction facing, int width, int height) {
