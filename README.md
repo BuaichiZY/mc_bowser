@@ -1,59 +1,42 @@
-# Kaleidoscope Cookery Unofficial 26.1.2 森罗物语：厨房 非官方移植
+# mc_bowser mc浏览器
 
-> I wanted to experience Kaleidoscope Cookery on newer versions of Minecraft so much that I decided to port it myself early just to scratch that itch.
+> 
 >
 >![Minecraft](https://img.shields.io/badge/Minecraft-Java%20Edition-brightgreen)
 ![Forge](https://img.shields.io/badge/%20NeoForge%20-26.1.2.86%20|%2026.1.2-orange)
 ![License](https://img.shields.io/badge/License-BSD%20|%20CC%20BY--NC--SA%204.0-blue)
 >
-> This build was developed with the assistance of AI. It implements most of the features from the original Kaleidoscope Cookery, but there may still be some bugs. If you encounter any issues, please feel free to report them. I will do my best to fix them.
+> This build was developed with the assistance of AI. If you encounter any issues, please feel free to report them. I will do my best to fix them.
 
-> The following section is taken from the original official documentation.
+## Builds
 
+- `mc_bowser-1.2.1.jar`: small normal build; Rinku downloads its own JCEF runtime.
+- `mc_bowser-1.2.1-offline-windows-x64.jar`: Windows x64 offline build containing the exact
+  Rinku 3.0.1 JCEF release. Rinku 3.0.1 is still required as a separate mod, but no JCEF network
+  download is needed. The embedded archive is verified by SHA-256 and Rinku's full manifest before use.
 
+## Survival recipe
 
+Craft one Browser Display Panel with black wool in the center and eight iron ingots around it.
 
-# Kaleidoscope Cookery 森罗物语：厨房
+## In-world browser display
 
-> A Minecraft mod that adds immersive cooking systems and delicious recipes to enhance your culinary adventure.
+- Build a rectangular 2x2 to 16x9 panel. Every panel must face the same direction.
+- Right-click toggles the display and sound on/off without capturing the camera.
+- Shift + right-click requests the exclusive address bar and full keyboard/mouse controller.
+- Close the controller to return to the world; the same browser continues rendering and playing on the blocks.
+- Right-click the front surface to click the corresponding point on the web page without opening another UI.
+- Links that request a new browser tab are redirected into the current display, which is required by sites such as Bilibili.
+- On a public Bilibili video page, press **Compat play** in the controller to download and transcode it to WebM for stock CEF. This supports non-DRM content the player is allowed to access.
 
+The media bridge reads `config/mc_bowser/media-bridge.properties` from the game directory. `tools-directory`
+points at the folder containing `yt-dlp.exe` and FFmpeg; `cache-directory` controls converted media.
+The three most recently used compatible videos are cached; opening a fourth evicts the oldest one.
 
-## Introduction
+On servers, the server synchronizes the display state, current URL/media and playback start time. Each client
+renders and plays the content locally. Only one player can hold the full controller for a display at a time.
 
-This is a mod developed for Minecraft Java Edition. This mod is committed to bringing a rich cooking experience and new game content to Minecraft.
+### HTML5 video note
 
-## Features
-
-- 🍳 Brand new cooking system
-- 🥘 Rich food recipes
-- 🔥 Innovative cooking equipment
-- 🎮 Immersive gaming experience
-
-## Image 
-![img](https://cdn.modrinth.com/data/v17FatAc/images/01385799f37a2874ffd44638c52c9a1b3faa0347.png)
-![img](https://cdn.modrinth.com/data/v17FatAc/images/0d4c8bdb51059683adecab83ed426faa13deae5f.png)
-![img](https://cdn.modrinth.com/data/v17FatAc/images/1725db57e319df4a57d2e0bde60a59fafd2e2e88.png)
-![img](https://cdn.modrinth.com/data/v17FatAc/images/2b2dfb0e73b58e9f038ebb48364421ae323b9d5f.png)
-![img](https://cdn.modrinth.com/data/v17FatAc/images/4bc9e2bb5f4f2a8081a4b1875187eedfb7b212df.png)
-
-## License agreement
-
-This project adopts a dual license agreement:
-
-- **Source code**: [BSD 3-Clause License](https://github.com/KaleidoscopeMods/KaleidoscopeCookery/blob/main/LICENSE-CODE)
-- **Resource files**: [CC BY-NC-SA 4.0](https://github.com/KaleidoscopeMods/KaleidoscopeCookery/blob/main/LICENSE-ASSETS)
-
-## Feedback and suggestions
-
-If you encounter problems or have suggestions for improvements during use, please contact us through the following methods:
-
-- 🐛 [Issues](https://github.com/KaleidoscopeMods/KaleidoscopeCookery/issues) - Submit a bug report
-- 💡 [Issues](https://github.com/KaleidoscopeMods/KaleidoscopeCookery/issues) - Feature suggestions, discussions and exchanges
-
-## Development Team
-
-**Kaleidoscope Official Production Team**
-
----
-
-*Thanks to all the developers and players who have contributed to this project! *
+MC Bowser uses the codecs shipped by the installed Rinku JCEF runtime. The official runtime does not decode
+Bilibili's H.264/AAC streams, so compatibility playback converts public videos to WebM/VP9/Opus locally.
