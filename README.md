@@ -33,8 +33,8 @@
 - 系统会缓存最近使用的 3 个兼容视频；当打开第 4 个视频时，会自动按时间顺序删除过往缓存。
 - 在服务器环境中，服务器会同步显示器状态、当前 URL/媒体内容以及播放开始时间。每个客户端都会在本地自行渲染并播放内容。同一时间，一个显示器只能由一名玩家持有完整控制器权限。
 
-- <img width="1404" height="813" alt="image" src="https://github.com/user-attachments/assets/644a627b-a6aa-4843-a18a-bf03ba0449ef" />
-- <img width="1404" height="811" alt="image" src="https://github.com/user-attachments/assets/09852e50-0331-43bc-9e52-aa28d2717e9e" />
+<img width="1404" height="813" alt="image" src="https://github.com/user-attachments/assets/644a627b-a6aa-4843-a18a-bf03ba0449ef" />
+<img width="1404" height="811" alt="image" src="https://github.com/user-attachments/assets/09852e50-0331-43bc-9e52-aa28d2717e9e" />
 
 
 - HTML5 视频说明
