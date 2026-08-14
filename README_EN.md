@@ -26,26 +26,15 @@
 
 ## Usage
 
-- Place the blocks vertically in a size ranging from **2×2 to 16×9**. All blocks must face the same direction.
+- Place the display blocks vertically in a size ranging from **2×2 to 16×9**. All blocks must be placed facing the same direction.
 - Right-click to toggle the display and sound on/off.
-- Shift + right-click opens the web interaction UI, allowing you to control the webpage. Only one player can use the controller for a display at the same time.
-- Closing the UI returns you to the world. The webpage or video will continue rendering on the blocks.
-- Links that request a new browser tab will be automatically redirected to the current display, fixing loading issues on websites such as Bilibili when opening video pages.
-- On public Bilibili video pages, press **Compat Play** in the controller to download and transcode videos into WebM format for playback with the default CEF. This feature only supports non-DRM content that the player is allowed to access.
-- The media bridge reads:
-from the game directory.
-
-- `tools-directory` specifies the folder containing `yt-dlp.exe` and FFmpeg.
-- `cache-directory` specifies the directory used to store converted media files.
-- The system caches the three most recently used compatible videos. When a fourth video is opened, the oldest cached file will be removed automatically.
-- On servers, the server synchronizes the display state, current URL/media content, and playback start time. Each client renders and plays the content locally. Only one player can hold full controller access for a display at the same time.
+- Shift + right-click opens the web control UI, allowing you to interact with the webpage. When a player is using the control UI, other players cannot access it at the same time.
+- Close the UI to return to the game world. The webpage or video will continue rendering on the blocks.
+- Links that request opening a new browser tab will be automatically redirected to the current display, fixing loading issues when accessing video pages on websites such as Bilibili.
+- On Bilibili video pages, you can click **Compat Play** in the controller. The video will be automatically transcoded into **WebM** format for playback with the default CEF. This feature only supports non-DRM content. Anime, variety shows, and other special paid content cannot be played.
+- In a server environment, the server synchronizes the display state, current URL/media content, and playback start time. Each client independently renders and plays the content locally. Only one player can open the control UI for a display at the same time.
 
 <img width="1404" height="811" alt="image" src="https://github.com/user-attachments/assets/7e1d374c-a852-47e8-8c4d-8cc6133e9b95" />
 <img width="1404" height="815" alt="image" src="https://github.com/user-attachments/assets/0968593e-a409-48ed-a4d0-d00b3489a883" />
 
 
-## HTML5 Video Notes
-
-- MC Bowser uses the codecs included with the installed **Rinku JCEF runtime**.
-
-- For video streams that cannot be played directly, such as H.264/AAC streams, the compatibility playback feature locally converts public videos into **WebM/VP9/Opus** format.
