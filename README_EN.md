@@ -15,6 +15,8 @@
 
 - `mc_bowser-xxx-offline.jar`: Includes the JCEF runtime package. You still need to install the dependency mod **Rinku**, but Rinku no longer needs to download JCEF online. Recommended for players with limited or unstable network access. The bundled archive will be verified using SHA-256 checksums and Rinku's complete file manifest before use.
 
+- For server installations, only the standard jar version is required on the server, and the Rinku dependency is not needed. Clients must still install the mod as described above.
+
 ## Survival Recipe
 
 - Crafted with one black wool in the center and iron ingots surrounding it in a crafting table.
