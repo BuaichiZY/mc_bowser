@@ -27,15 +27,8 @@
 - Shift + 右键点击可打开网页操作的UI，可以进行网页操作，当有人使用该页面时他人无法使用。
 - 关闭UI后即可返回游戏世界，方块上会持续渲染网页或视频。
 - 对于会请求打开新浏览器标签页的链接，会自动重定向到当前显示器中打开，解决诸如 Bilibili 等网站进入视频页时的加载。
-- 在公开的 Bilibili 视频页面中，可在控制器里点击 Compat play（兼容播放），将视频下载并转码为 WebM，以便原版 CEF 播放。该功能仅支持播放器有权访问的非 DRM 内容。
-- 媒体桥接功能会读取游戏目录下的：config/mc_bowser/media-bridge.properties
-- 其中，tools-directory 指向包含 yt-dlp.exe 和 FFmpeg 的文件夹；cache-directory 用于指定转码后媒体文件的缓存目录。
-- 系统会缓存最近使用的 3 个兼容视频；当打开第 4 个视频时，会自动按时间顺序删除过往缓存。
-- 在服务器环境中，服务器会同步显示器状态、当前 URL/媒体内容以及播放开始时间。每个客户端都会在本地自行渲染并播放内容。同一时间，一个显示器只能由一名玩家持有完整控制器权限。
+- 在 Bilibili 视频详情页中，可在控制器里点击兼容播放,视频会自动转码为 WebM，以便原版 CEF 播放。该功能仅支持非 DRM 内容，番剧、综艺等受限及其他特殊付费内容无法观看。
+- 在服务器环境中，服务器会同步显示器状态、当前 URL/媒体内容以及播放开始时间。每个客户端都会在本地自行渲染并播放内容。同一时间，一个显示器只能由一名玩家能打开UI。
 
 <img width="1404" height="813" alt="image" src="https://github.com/user-attachments/assets/644a627b-a6aa-4843-a18a-bf03ba0449ef" />
 <img width="1404" height="811" alt="image" src="https://github.com/user-attachments/assets/09852e50-0331-43bc-9e52-aa28d2717e9e" />
-
-
-- HTML5 视频说明
-- MC Bowser 使用已安装的 Rinku JCEF 运行时所自带的编解码器。在处理 H.264/AAC 等无法直接播放的视频流时，兼容播放功能会在本地将公开视频转换为 WebM/VP9/Opus 格式。
