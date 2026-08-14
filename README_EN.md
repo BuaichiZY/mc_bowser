@@ -13,7 +13,8 @@
 
 - `mc_bowser-xxx.jar`: Standard version. Suitable for players whose dependency mod **Rinku** can correctly download its JCEF runtime (requires a stable connection to GitHub for downloads).
 
-- `mc_bowser-xxx-offline.jar`: Includes the JCEF runtime package. You still need to install the dependency mod **Rinku**, but Rinku no longer needs to download JCEF online. Recommended for players with limited or unstable network access. The bundled archive will be verified using SHA-256 checksums and Rinku's complete file manifest before use.
+- `mc_bowser-xxx-offline.jar`: This version bundles the JCEF runtime. The Rinku dependency is still required, but it will no longer need to download JCEF from the internet. This version is intended for players with restricted network access or unstable connections. The embedded package is verified with SHA-256 checksums and Rinku's complete file manifest before being used.
+After the first successful launch, the offline version will extract the JCEF runtime into the game directory for future use. When updating, you can simply remove the offline version and install the new standard jar version instead. The previously generated JCEF cache will remain available and continue to be used, helping reduce unnecessary storage consumption.
 
 - For server installations, only the standard jar version is required on the server, and the Rinku dependency is not needed. Clients must still install the mod as described above.
 
