@@ -11,8 +11,8 @@
 
 ## 构建
 
-- `mc_bowser-1.2.1.jar`: 普通版本：适用于前置mod Rinku 能正确下载其插件 JCEF 的玩家（需要Github能正确联通下载）。
-- `mc_bowser-1.2.1-offline.jar`: 附带了JCEF插件的版本，你仍然需要下载前置mod Rinku，但是Rinku无需联网下载下载JCEF，适用于国内及网络不好的玩家。嵌入式压缩包在使用前会通过 SHA-256 校验和 Rinku 的完整清单进行验证。
+- `mc_bowser-xxx.jar`: 普通版本：适用于前置mod Rinku 能正确下载其插件 JCEF 的玩家（需要Github能正确联通下载）。
+- `mc_bowser-xxx-offline.jar`: 附带了JCEF插件的版本，你仍然需要下载前置mod Rinku，但是Rinku无需联网下载下载JCEF，适用于国内及网络不好的玩家。嵌入式压缩包在使用前会通过 SHA-256 校验和 Rinku 的完整清单进行验证。
 
 ## 生存模式配方
 
