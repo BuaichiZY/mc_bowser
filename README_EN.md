@@ -11,9 +11,9 @@
 
 ## Builds
 
-- `mc_bowser-1.2.1.jar`: Standard version. Suitable for players whose dependency mod **Rinku** can correctly download its JCEF runtime (requires a stable connection to GitHub for downloads).
+- `mc_bowser-xxx.jar`: Standard version. Suitable for players whose dependency mod **Rinku** can correctly download its JCEF runtime (requires a stable connection to GitHub for downloads).
 
-- `mc_bowser-1.2.1-offline.jar`: Includes the JCEF runtime package. You still need to install the dependency mod **Rinku**, but Rinku no longer needs to download JCEF online. Recommended for players with limited or unstable network access. The bundled archive will be verified using SHA-256 checksums and Rinku's complete file manifest before use.
+- `mc_bowser-xxx-offline.jar`: Includes the JCEF runtime package. You still need to install the dependency mod **Rinku**, but Rinku no longer needs to download JCEF online. Recommended for players with limited or unstable network access. The bundled archive will be verified using SHA-256 checksums and Rinku's complete file manifest before use.
 
 ## Survival Recipe
 
